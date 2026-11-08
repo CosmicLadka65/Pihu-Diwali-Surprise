@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Little Diwali, Just For Pihu</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080e24;color:#fff4df;font-family:Georgia,serif}
+.hero{min-height:94vh;display:grid;place-items:center;text-align:center;padding:60px 22px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 12%,#35436e 0,#172344 42%,#080e24 82%)}
+.stars,.stars:before,.stars:after{position:absolute;inset:0;content:"";pointer-events:none;background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#f6d99a 1px,transparent 1.5px);background-size:83px 91px,137px 119px;background-position:13px 9px,43px 29px;opacity:.42;animation:twinkle 5s ease-in-out infinite alternate}
+.stars:before{transform:translate(25px,38px);opacity:.45}.stars:after{transform:translate(-20px,17px);opacity:.25}
+.firefly-layer{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.firefly{position:absolute;width:5px;height:5px;border-radius:50%;background:#ffe8a6;
+ box-shadow:0 0 7px 3px #ffd778aa,0 0 19px 7px #ffc85b55;
+ animation:drift var(--duration,9s) ease-in-out infinite alternate;
+ animation-delay:var(--delay,0s);opacity:0}
+@keyframes twinkle{to{opacity:.85;filter:brightness(1.5)}}
+@keyframes drift{0%{transform:translate3d(0,18px,0) scale(.65);opacity:.12}
+ 35%{opacity:.9}100%{transform:translate3d(var(--move,35px),-65px,0) scale(1.2);opacity:.2}}
+@media(prefers-reduced-motion:reduce){.stars,.stars:before,.stars:after,.firefly{animation:none!important}}.content{position:relative;z-index:1;max-width:720px}.eyebrow{font:11px Arial;letter-spacing:.32em;color:#f4d28c}.moon{font-size:66px;filter:drop-shadow(0 0 20px #eac879);margin:26px 0}.name{font-size:clamp(55px,12vw,92px);font-style:italic;color:#f5d590;margin:0}.sub{font:12px Arial;letter-spacing:.28em;color:#e8d5b0;margin:15px 0 28px}.diyas{font-size:35px;letter-spacing:17px;margin:30px 0;filter:drop-shadow(0 0 12px #f4bd5f)}h1{font-size:clamp(29px,6vw,48px);line-height:1.25;font-weight:400;font-style:italic;margin:20px auto}p{line-height:1.9;color:#e8dcc7}.hero p{max-width:440px;margin:auto;font-size:16px}button{border:0;border-radius:30px;background:#f0cf8c;color:#201a2b;padding:14px 24px;font-weight:bold;cursor:pointer;margin-top:25px}
+main{max-width:960px;margin:auto;padding:25px 20px 70px}.section{margin:35px 0;padding:30px 25px;border:1px solid #d9b96b42;border-radius:20px;background:#ffffff08;text-align:center}.tag{font:11px Arial;letter-spacing:.24em;color:#f0ce89}.section h2{font-size:32px;font-style:italic;font-weight:400;color:#f4d28c;margin:15px 0}.section p{max-width:650px;margin:0 auto}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:22px}.photo{margin:0;overflow:hidden;border-radius:14px;background:#111a34;border:1px solid #d9b96b42}.photo img{display:block;width:100%;height:340px;object-fit:cover}.photo:nth-child(1){grid-row:span 2}.photo:nth-child(1) img{height:693px}.photo figcaption{padding:9px;color:#e8d5b0;font:11px Arial;letter-spacing:.08em}
+.letter{font-style:italic;font-size:17px;line-height:2}.end{padding:55px 15px;text-align:center}.end .big{font-size:44px}.end h2{font-size:38px;font-style:italic;color:#f4d28c;font-weight:400}
+@media(max-width:560px){.section{padding:25px 17px}.gallery{gap:8px}.photo img{height:230px}.photo:nth-child(1) img{height:468px}.photo figcaption{font-size:10px}.letter{font-size:15px}}
+</style></head>
+<body>
+<header class="hero"><div class="stars"></div><div class="firefly-layer" aria-hidden="true"></div><div class="content">
+<div class="eyebrow">✦ A DIWALI SURPRISE ✦</div><div class="moon">🌙</div>
+<div class="eyebrow">A LITTLE SOMETHING FOR</div><h1 class="name">Pihu</h1>
+<div class="sub">MY FAVOURITE LIGHT ✨</div><div class="diyas">🪔 🪔 🪔</div>
+<h1>Somewhere between a thousand lights...</h1>
+<p>There's one person who makes my entire world brighter.</p>
+<button onclick="document.getElementById('wish').scrollIntoView({behavior:'smooth'})">Open your little surprise ♡</button>
+</div></header>
+<main>
+<section class="section" id="wish"><div class="tag">01 — A WISH FOR YOU</div><div style="font-size:38px;margin:15px">🪔</div><h2>Even from miles away...</h2><p>I hope your Diwali is filled with happiness, laughter, warmth and a thousand little reasons to smile.</p></section>
+<section class="section"><div class="tag">02 — OUR LITTLE GALLERY</div><h2>Little moments, lovely you</h2><p>Every picture holds a little reminder of why you're so special to me.</p>
+<div class="gallery">
+<figure class="photo"><img src="photos/pihu-1.jpeg" alt="Pihu, original photo"><figcaption>A LITTLE MOMENT ♡</figcaption></figure>
+<figure class="photo"><img src="photos/pihu-2.jpeg" alt="Pihu, original photo"><figcaption>YOUR SMILE ✨</figcaption></figure>
+<figure class="photo"><img src="photos/pihu-3.jpeg" alt="Pihu, original photo"><figcaption>JUST YOU 🌙</figcaption></figure>
+<figure class="photo"><img src="photos/pihu-4.jpeg" alt="Pihu, original photo"><figcaption>MY FAVOURITE VIEW</figcaption></figure>
+<figure class="photo"><img src="photos/pihu-5.jpeg" alt="Pihu, original photo"><figcaption>A LITTLE SUNSHINE</figcaption></figure>
+<figure class="photo"><img src="photos/pihu-6.jpeg" alt="Pihu, original photo"><figcaption>GLOWING LIGHTS</figcaption></figure>
+<figure class="photo"><img src="photos/pihu-7.jpeg" alt="Pihu, original photo"><figcaption>ONE MORE MEMORY ♡</figcaption></figure>
+</div></section>
+<section class="section"><div class="tag">03 — A LETTER FOR PIHU</div><div style="font-size:38px;margin:15px">💌</div><h2>A little piece of my heart</h2>
+<p class="letter">I wish I could celebrate this Diwali with you. Until then, let these little lights remind you that someone is thinking of you. ❤️<br><br>Pihu, no matter how far apart we are, I hope you feel a little of my love in every light tonight. I wish I could be there to share the celebrations, the laughter and all those little moments with you. Happy Diwali, meri favourite person. ❤️</p></section>
+<div class="end">
+<div class="eyebrow">ONE LAST LITTLE WISH</div>
+<button id="final-diya" type="button" aria-expanded="false" style="display:block;margin:22px auto;background:transparent;color:#f5d590;font-size:58px;padding:8px;filter:drop-shadow(0 0 16px #f4bd5f)">🪔</button>
+<p style="font:12px Arial;letter-spacing:.12em;color:#e8d5b0">TAP THE DIYA TO LIGHT IT</p>
+<div id="final-wish" hidden>
+<h2>Happy Diwali, Pihu</h2>
+<p>If I could make one wish tonight, it would be to spend this Diwali beside you. ❤️</p>
+<p>Distance is just a number of miles.<br>You're still in my favourite place — my thoughts.</p>
+</div>
+<div class="eyebrow" style="margin-top:35px">MADE WITH LOVE ♡ JUST FOR YOU</div></div>
+</main>
+<script>
+(function(){
+ const diya=document.getElementById('final-diya');
+ const wish=document.getElementById('final-wish');
+ if(diya && wish){
+   diya.addEventListener('click',()=>{
+     wish.hidden=false;
+     diya.setAttribute('aria-expanded','true');
+     diya.textContent='🪔';
+     diya.style.filter='drop-shadow(0 0 25px #ffe59b) brightness(1.3)';
+     diya.nextElementSibling.textContent='A LITTLE WISH, JUST FOR YOU ♡';
+   });
+ }
+ const layer=document.querySelector('.firefly-layer');
+ if(!layer || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+ for(let i=0;i<24;i++){
+   const dot=document.createElement('i');
+   dot.className='firefly';
+   dot.style.left=(4+Math.random()*92)+'%';
+   dot.style.top=(12+Math.random()*78)+'%';
+   dot.style.setProperty('--duration',(7+Math.random()*8)+'s');
+   dot.style.setProperty('--delay',(-Math.random()*12)+'s');
+   dot.style.setProperty('--move',(-35+Math.random()*70)+'px');
+   layer.appendChild(dot);
+ }
+})();
+</script>
+</body></html>
